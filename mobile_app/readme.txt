@@ -17,5 +17,5 @@ Introduction
 
 iCHAT app works as an instant exchanging of texts. 
 One of the main feature of app is that while texting it provide users with the two choices of mode
-that is handwritting and keyboard. 
+that is handwritting and keyboard. After detecting the changes application speaks the message. 
 
