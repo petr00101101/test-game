@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ichat"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    
+    <!-- parse -->
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- parse -->
+    
+    <application
+        android:name="ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ichat.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ichat.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.example.ichat.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.ichat.SetDp"
+            android:label="@string/title_activity_set_dp" >
+        </activity>
+        <activity
+            android:name="com.example.ichat.contacts"
+            android:label="@string/title_activity_contacts" >
+        </activity>
+        <activity
+            android:name="com.example.ichat.chat"
+            android:label="@string/title_activity_Chat" 
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+            	<action android:name="android.intent.action.SEND" />
+            	<category android:name="android.intent.category.DEFAULT"/>
+            	<data android:mimeType="text/plain"/>    
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ichat.CustomList"
+            android:label="@string/title_activity_contacts" >
+        </activity>
+        <activity
+            android:name="com.example.ichat.ChangePassword"
+            android:label="@string/title_activity_pass" >
+        </activity>
+        <activity
+            android:name="com.example.ichat.AllMsg"
+            android:label="@string/title_activity_allmsg" >
+        </activity>
+        <activity
+            android:name="com.example.ichat.ClrMsg"
+            android:label="@string/title_activity_clrmsg" >
+        </activity>
+        
+    </application>
+
+</manifest>

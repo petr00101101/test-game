@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iChat</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_set_dp">SetDp</string>
+    <string name="title_activity_Chat">Chat</string>
+    <string name="title_activity_contacts">Contacts</string>
+    <string name="title_activity_pass">Change Password</string>
+    <string name="title_activity_allmsg">All Messages</string>
+    <string name="title_activity_clrmsg">Clear Messages</string>
+    
+
+</resources>
